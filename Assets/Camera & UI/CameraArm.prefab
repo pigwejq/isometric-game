@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 4003197513113651790}
   - component: {fileID: 4003197513113651791}
   - component: {fileID: 4003197513113651792}
+  - component: {fileID: 1216396490319891871}
+  - component: {fileID: 5629554534551526599}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -82,6 +84,36 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4003197513113651793}
   m_Enabled: 1
+--- !u!114 &1216396490319891871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4003197513113651793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d02853f5d34bd8f429969ac34c466d07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerPriorities: 
+--- !u!114 &5629554534551526599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4003197513113651793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f83d710eebbbca438a7ce04015996df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walkCursor: {fileID: 0}
+  unknownCursor: {fileID: 0}
+  targetCursor: {fileID: 0}
+  buttonCursor: {fileID: 0}
+  cursorHotspot: {x: 0, y: 0}
 --- !u!1 &5608863961813509204
 GameObject:
   m_ObjectHideFlags: 0
@@ -91,8 +123,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5225197545214271135}
-  - component: {fileID: 7928537151203318697}
-  - component: {fileID: 1076068536019081986}
   - component: {fileID: 2238308158273986921}
   m_Layer: 0
   m_Name: CameraArm
@@ -116,36 +146,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7928537151203318697
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5608863961813509204}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f83d710eebbbca438a7ce04015996df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  walkCursor: {fileID: 2800000, guid: 5c63a2b07ccd90747842dc525e7f3885, type: 3}
-  unknownCursor: {fileID: 2800000, guid: 1233eddf80e89d0448de8104f0a684ba, type: 3}
-  targetCursor: {fileID: 2800000, guid: 8d22ba13103a44f47b7a9de6ae0c4a6c, type: 3}
-  buttonCursor: {fileID: 2800000, guid: b2aa98cd561424a8681ab320dbc7c67e, type: 3}
-  cursorHotspot: {x: 0, y: 0}
---- !u!114 &1076068536019081986
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5608863961813509204}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d02853f5d34bd8f429969ac34c466d07, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  layerPriorities: 
 --- !u!114 &2238308158273986921
 MonoBehaviour:
   m_ObjectHideFlags: 0

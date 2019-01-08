@@ -12,6 +12,7 @@ public class CursorAffordance : MonoBehaviour {
 
     [SerializeField] Vector2 cursorHotspot = new Vector2(0, 0);
 
+    // TODO solve fight between serialize and const
     [SerializeField] const int walkableLayerNumber = 9;
     [SerializeField] const int enemyLayerNumber = 10;
     [SerializeField] const int npcLayerNumber = 11;
@@ -22,7 +23,7 @@ public class CursorAffordance : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         cameraRaycaster = GetComponent<CameraRaycaster>();
-        cameraRaycaster.notifyLayerChangeObservers += OnLayerChanged; // registering
+        cameraRaycaster.NotifyLayerChangeObservers += OnLayerChanged; // registering
 	}
 
     void OnLayerChanged(int newLayer) {
