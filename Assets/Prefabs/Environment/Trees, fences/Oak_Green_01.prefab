@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 4281889935062619023}
   - component: {fileID: 4281889935059719087}
   - component: {fileID: 4281889935060849007}
-  - component: {fileID: 3501214924627793589}
+  - component: {fileID: 6600256062222274879}
   m_Layer: 0
   m_Name: Mesh1_Oak_Green_Model
   m_TagString: Untagged
@@ -110,8 +110,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &3501214924627793589
-BoxCollider:
+--- !u!136 &6600256062222274879
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -120,6 +120,7 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.57617, y: 4.9335, z: 1.82}
+  m_Radius: 0.91
+  m_Height: 4.9335
+  m_Direction: 1
   m_Center: {x: -0.788085, y: 2.46675, z: -0.91}
