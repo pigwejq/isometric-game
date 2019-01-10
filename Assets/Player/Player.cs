@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class Player : MonoBehaviour, IDamageable
 {
 
     [SerializeField] float maxHp = 100f;
@@ -16,14 +16,16 @@ public class Player : MonoBehaviour
         currentMp = maxMp;
     }
 
-    public float healthAsPercentage
-    {
-        get { return currentHp / maxHp; }
-    }
+    public float healthAsPercentage { get { return currentHp / maxHp; } }
 
     public float manaAsPercentage
     {
         get { return currentMp / maxMp; }
+    }
+
+    public void TakeDamage(float damage)
+    {
+        currentHp = Mathf.Clamp(currentHp - damage, 0f, maxHp);
     }
 
     // Update is called once per frame
